@@ -26,8 +26,8 @@ body {
 .island {
     background-color: white;
     margin-top: 30px;
-    width: 1660px;
-    height: 90px;
+    width: 68%;
+    height: 75px;
     align-self: center;
     border-radius: 50px;
     align-content: center;
@@ -47,7 +47,7 @@ body {
 }
 
 #mtb-logo {
-    width: 190px;
+    width: 175px;
     height: 30px;
 }
 
@@ -105,11 +105,12 @@ body {
 
 .homepage-body {
     margin-top: 40px;
-    width: 1660px;
-    background-color: #025a41a1;
+    width: 67%;
+    background: #00000078;
+    background: linear-gradient(43deg, rgba(0, 0, 0, 0.668) 0%, rgba(2, 103, 74, 0.685) 100%);  
     backdrop-filter: blur(45px);
     align-self: center;
-    height: 650px;
+    height: 550px;
     display: flex;
     flex-direction: row;
     border-radius: 10px;
@@ -179,4 +180,14 @@ body {
     color: white;
     font-family: "Balto Light";
     font-size: 30px;
+}
+
+@media (min-width: 1081px) {
+    .island {
+        width: 1660px;
+    }
+    .homepage-body {
+        width: 1660px;
+    }
+    
 }
