@@ -13,6 +13,11 @@
     src: url("assets/fonts/fonnts.com-Balto_Thin.otf") format("opentype");
 }
 
+@font-face {
+    font-family: "Balto Book";
+    src: url("assets/fonts/fonnts.com-Balto_Book.otf") format("opentype");
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -26,12 +31,12 @@ body {
 .island {
     background-color: white;
     margin-top: 30px;
-    width: 68%;
-    height: 75px;
+    width: 90%;
+    height: 65px;
     align-self: center;
     border-radius: 50px;
     align-content: center;
-    box-shadow: -8px 20px 40px 0px rgba(0, 0, 0, 0.335);
+    box-shadow: -8px 20px 40px 0px rgba(0, 0, 0, 0.655);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -47,14 +52,14 @@ body {
 }
 
 #mtb-logo {
-    width: 175px;
-    height: 30px;
+    width: 120px;
+    height: 20px;
 }
 
 #divider {
     background-color: rgba(3, 1, 1, 0.753);
     width: 1px;
-    height: 45px;
+    height: 35px;
 }
 
 #five-figures-h2 {
@@ -78,7 +83,7 @@ body {
 .nav-links li {
     position: relative;
     list-style: none;
-    font-size: 25px;
+    font-size: 20px;
     font-family: "Balto Light";
     color: #212529;
     cursor: pointer;
@@ -106,15 +111,22 @@ body {
 .homepage-body {
     margin-top: 40px;
     width: 67%;
-    background: #00000078;
-    background: linear-gradient(43deg, rgba(0, 0, 0, 0.668) 0%, rgba(2, 103, 74, 0.685) 100%);  
-    backdrop-filter: blur(45px);
+    background: linear-gradient(
+        135deg,
+        rgba(33, 46, 48, 0.96) 0%,
+        rgba(19, 55, 52, 0.913) 35%,
+        rgba(8, 68, 55, 0.96) 70%,
+        rgba(3, 82, 58, 0.98) 100%
+    );
+
+    backdrop-filter: blur(20px);
     align-self: center;
-    height: 550px;
+    height: 600px;
     display: flex;
     flex-direction: row;
-    border-radius: 10px;
     padding: 15px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .main-text {
@@ -123,6 +135,11 @@ body {
     padding-left: 25px;
 }
 
+#main-header-five-figures {
+    color: #0aaf83;
+    font-family: "Balto Light";
+    text-decoration: underline;
+}
 #main-header {
     font-family: "Balto Medium";
     color: #ffffff;
@@ -130,19 +147,24 @@ body {
 }
 
 #main-header-inner-text{
-    font-family: "Balto Light";
+    font-family: "Balto Medium";
     color: #ffffff;
     font-weight: bold;
+} 
+
+#main-header-inner-text-opp {
+    color: #0aaf83;
 }
 
-#main-header-innet-text-1 {
+#main-header-inner-text-1 {
     margin-top: 84px;
-    font-family: "Balto Light";
-    font-size:30px;
+    font-family: "Balto Medium";
+    font-size: 30px;
     color: #ffffff;
+    font-weight:10000;
 }
 
-#main-header-innet-text-2 {
+#main-header-inner-text-2 {
     font-family: "Balto Light";
     font-size: 30px;
     color: #ffffff;
@@ -180,6 +202,94 @@ body {
     color: white;
     font-family: "Balto Light";
     font-size: 30px;
+}
+
+
+.team-section{
+    flex:1;
+    position:relative;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    padding-top:5px;
+    margin-left: 115px;
+}
+
+#meet-the-team{
+    margin:0;
+
+    font-family:"Balto Thin";
+    color:white;
+
+    font-size:clamp(40px,4vw,60px);
+
+    text-align:center;
+}
+
+.homepage-photo-frame{
+    width:90%;
+    max-width:750px;
+
+    aspect-ratio:16/10;
+
+    border-radius:25px;
+
+    background-image:url("assets/group-photo.jpeg");
+    background-size:cover;
+    background-position:center;
+
+    box-shadow:-15px 25px 40px 0px #000000cf;
+}
+
+.homepage-body-1 {
+    width: 87.2%;
+    background-color: #f7f8f6dc;
+    backdrop-filter: blur(20px);
+    align-self: center;
+    height: 600px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#homepage-body-1-header {
+    padding-top: 15px;
+    font-family: "Balto Book";
+    font-size: 2.4em;
+    padding-left: 25px;
+    margin: 0;
+}
+
+#homepage-body-1-sub {
+    font-family: "Balto Light";
+    font-size: 25px;
+    padding-left: 25px;
+}
+
+.info-containers {
+    display: flex;
+    gap: 25px;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+.container {
+    flex: 1;
+    min-width: 0;
+    height: 380px;
+    background: white;
+    border-radius: 15px;
+    box-shadow:0px 10px 20px 0px #00000054;
+
+}
+
+.container:hover {
+    box-shadow:-8px 10px 20px 0px #02522754;
+    cursor: pointer;
 }
 
 @media (min-width: 1081px) {
