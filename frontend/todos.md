@@ -1,3 +1,5 @@
+Fix island and homeppage-body width
+
 Explore Opportunites section needs to be completed b
 
 Homepage should have the backend data graph displayed
