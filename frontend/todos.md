@@ -14,4 +14,11 @@ Revise the timeline page's strucutre
 Revise the applicants guide page's strucutre
 Revise the about us page's strucutre
 
+// YESTERDAYS WORKS
 
+DONE - Hover animation for homepage-body-bottom-section
+Add TDP for Cloud & Infrastructure
+
+// TODAYS WORK
+
+Add icons and caption for the programs section

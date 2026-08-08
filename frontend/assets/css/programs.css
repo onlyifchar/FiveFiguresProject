@@ -1,0 +1,201 @@
+@font-face {
+    font-family: "Balto Light";
+    src: url("../fonts/fonnts.com-Balto_Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Balto Medium";
+    src: url("../fonts/fonnts.com-Balto_Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Balto Thin";
+    src: url("../fonts/fonnts.com-Balto_Thin.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Balto Book";
+    src: url("../fonts/fonnts.com-Balto_Book.otf") format("opentype");
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/backgrounds/IMG_0915.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.island {
+    background-color: white;
+    margin-top: 30px;
+    width: 90%;
+    height: 65px;
+    align-self: center;
+    border-radius: 50px;
+    align-content: center;
+    box-shadow: -8px 20px 40px 0px rgba(0, 0, 0, 0.655);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 25px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+#mtb-logo {
+    width: 120px;
+    height: 20px;
+}
+
+#divider {
+    background-color: rgba(3, 1, 1, 0.753);
+    width: 1px;
+    height: 35px;
+}
+
+#five-figures-h2 {
+    color: #0d602ea1;
+    font-family: "Balto Light"
+}
+
+.nav-links{
+    margin-left: auto ;
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+}
+
+.nav-links ul{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+.nav-links li {
+    position: relative;
+    list-style: none;
+    font-size: 20px;
+    font-family: "Balto Light";
+    color: #212529;
+    cursor: pointer;
+}
+
+.nav-links li:hover{
+    color: #00563F
+}
+
+.nav-links li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #00563F;
+    transition: width 0.2s ease;
+}
+
+.nav-links li:hover::after {
+    width: 100%;
+}
+
+.homepage-body {
+    margin-top: 40px;
+    width: 67%;
+    background: linear-gradient(
+        135deg,
+        rgba(33, 46, 48, 0.96) 0%,
+        rgba(19, 55, 52, 0.913) 35%,
+        rgba(8, 68, 55, 0.96) 70%,
+        rgba(3, 82, 58, 0.98) 100%
+    );
+
+    backdrop-filter: blur(20px);
+    align-self: center;
+    height: 850px;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.homepage-body-left-section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    height: 600px;
+}
+
+.main-text {
+    height: 100%;
+}
+
+#main-header-five-figures {
+    color: #0aaf83;
+    font-size: 22px;
+    font-family: "Balto Light";
+}
+
+#main-header-programs {
+    margin-top: 60px;
+    font-family: "Balto Medium";
+    font-size: 45px;
+    color: white;
+}
+
+.programs-hero-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 450px;
+    gap: 30px;
+}
+
+.program-hero {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #0aaf83;
+    border-radius: 25px;
+    font-family: "Balto Light";
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    align-content: center;
+    height: 200px;
+    box-shadow: -10px 20px 40px 0px rgba(0, 0, 0, 0.701);
+}
+
+.homepage-body-right-section {
+    width: 900px;
+    height: 98%;
+    margin-left: 68px;
+    background-color: transparent;
+    box-shadow: -20px 5px 20px 0px #000000;
+    border-top: none;
+    border-right: none;
+    
+}
+
+@media (min-width: 1081px) {
+    .island {
+        width: 1660px;
+    }
+    .homepage-body {
+        width: 1660px;
+    }
+    
+}

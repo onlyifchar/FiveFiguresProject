@@ -1,27 +1,27 @@
 @font-face {
     font-family: "Balto Light";
-    src: url("assets/fonts/fonnts.com-Balto_Light.otf") format("opentype");
+    src: url("../fonts/fonnts.com-Balto_Light.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Balto Medium";
-    src: url("assets/fonts/fonnts.com-Balto_Medium.otf") format("opentype");
+    src: url("../fonts/fonnts.com-Balto_Medium.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Balto Thin";
-    src: url("assets/fonts/fonnts.com-Balto_Thin.otf") format("opentype");
+    src: url("../fonts/fonnts.com-Balto_Thin.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Balto Book";
-    src: url("assets/fonts/fonnts.com-Balto_Book.otf") format("opentype");
+    src: url("../fonts/fonnts.com-Balto_Book.otf") format("opentype");
 }
 
 body {
     display: flex;
     flex-direction: column;
-    background-image: url("assets/IMG_0915.jpeg");
+    background-image: url("../images/backgrounds/IMG_0915.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -78,6 +78,10 @@ body {
     display: flex;
     flex-direction: row;
     gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
 }
 
 .nav-links li {
@@ -157,7 +161,6 @@ body {
 }
 
 #main-header-inner-text-1 {
-    margin-top: px;
     font-family: "Balto Medium";
     font-size: 30px;
     color: #ffffff;
@@ -187,6 +190,16 @@ body {
     display: flex;
     flex-direction: row;
     transition: 0.3s ease;
+}
+
+.homepage-body-bottom-section a {
+    text-decoration: none;
+    color: white;
+}
+
+.homepage-body-bottom-section a:active {
+    text-decoration: none;
+    color: white;
 }
 
 .homepage-body-bottom-section h2 {
@@ -301,6 +314,7 @@ body {
 
 .homepage-photo-frame {
     margin-top: 80px;
+    margin-right: 35px;
     width: 100%;
     max-width: 6000px;
     display: flex;
@@ -426,6 +440,9 @@ body {
         width: 1660px;
     }
     .homepage-body {
+        width: 1660px;
+    }
+    .homepage-body-1 {
         width: 1660px;
     }
     
